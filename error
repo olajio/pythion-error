@@ -1,4 +1,10 @@
 Traceback (most recent call last):
-  File "automate_monitoring.py", line 8, in <module>
-    from helpers.general.sdp_operations import get_ticket_details
-ModuleNotFoundError: No module named 'helpers.general.sdp_operations'
+  File "automate_monitoring.py", line 14, in <module>
+    from actions.url_monitoring import URLMonitoringAction
+  File "/host_directory/win2019/python_automation_scripts/monitoring_automation_v2/actions/url_monitoring.py", line 6, in <module>
+    from modules.git.git_setup import GitHandler
+  File "/host_directory/win2019/python_automation_scripts/monitoring_automation_v2/modules/git/git_setup.py", line 2, in <module>
+    from git import Repo
+ModuleNotFoundError: No module named 'git'
+bash-4.2# pip3 install git
+Looking in indexes: https://artifactory.hedgeserv.net/artifactory/api/pypi/hs_pypi/simple
